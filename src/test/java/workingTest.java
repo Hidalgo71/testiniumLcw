@@ -53,8 +53,8 @@ public class workingTest extends lcwLocators
 
         expWait.until(ExpectedConditions.visibilityOfElementLocated(By.className("ul-title")));
         String loginSccCheck = lcwDriver.findElement(By.className("header-icon-label")).getText();                          //For login check Text = Giriş Yap
-        lcwDriver.findElement(By.xpath(mail)).sendKeys("y.ozdemir71@gmail.com");
-        lcwDriver.findElement(By.xpath(pass)).sendKeys("123Test321");
+        lcwDriver.findElement(By.xpath(mail)).sendKeys("@gmail.com");
+        lcwDriver.findElement(By.xpath(pass)).sendKeys("");
         lcwDriver.findElement(By.xpath("//a[@id='loginLink']")).click();
 
         Thread.sleep(1500);
